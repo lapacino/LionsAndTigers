@@ -53,7 +53,7 @@ class ViewController: UIViewController {
 
     @IBAction func nextBarButtonItem(sender: UIBarButtonItem) {
         
-        UIView.transitionWithView(self, duration: 1, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
+        UIView.transitionWithView(self.view, duration: 1, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
             var tiger2 = Tigers()
             tiger2.image = UIImage(named: "IndochineseTiger.jpg")!
             tiger2.name = "IndochineseTiger"
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
             tiger4.breed = "Siberian"
             tiger4.fact = "live in the Siberian area"
             
-            tigersArray = [tiger2, tiger3, tiger4]
+            self.tigersArray = [tiger2, tiger3, tiger4]
             
             var lion = Lions()
             lion.image = UIImage(named: "Lion.jpg")!
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             lioness.breed = "southAfrica"
             lioness.fact = "live in the southAfrican area"
             
-            lionsArray = [lion, lioness]
+            self.lionsArray = [lion, lioness]
             
             
             
@@ -109,43 +109,43 @@ class ViewController: UIViewController {
             lionCub2.breed = "kongo"
             lionCub2.fact = "live in the kongo area"
             
-            lionCubArray = [lionCub1, lionCub2]
+            self.lionCubArray = [lionCub1, lionCub2]
             
             
-            randomAnimal()
+            self.randomAnimal()
             
-            if currentAnimals.subSpicies == "Tigers"{
+            if self.currentAnimals.subSpicies == "Tigers"{
                 
                 let indexPath = Int(arc4random_uniform(UInt32(3)))
-                var tiger = tigersArray[indexPath]
+                var tiger = self.tigersArray[indexPath]
                 self.imageView.image = tiger.image
                 self.nameLabel.text = tiger.name
                 self.ageLabel.text = String(tiger.age)
                 self.breedLabel.text = tiger.breed
                 self.factLabel.text = tiger.fact
             }
-            else if currentAnimals.subSpicies == "Lions" {
+            else if self.currentAnimals.subSpicies == "Lions" {
                 
                 let indexPath1 = Int(arc4random_uniform(UInt32(2)))
-                var lions = lionsArray[indexPath1]
+                var lions = self.lionsArray[indexPath1]
                 self.imageView.image = lions.image
                 self.nameLabel.text = lions.name
                 self.ageLabel.text = String(lions.age)
                 self.breedLabel.text = lions.breed
                 self.factLabel.text = lions.fact
             }
-            else if currentAnimals.subSpicies == "LionCub" {
+            else if self.currentAnimals.subSpicies == "LionCub" {
                 
                 let indexPath2 = Int(arc4random_uniform(UInt32(2)))
-                var lionCub = lionCubArray[indexPath2]
+                var lionCub = self.lionCubArray[indexPath2]
                 self.imageView.image = lionCub.image
                 self.nameLabel.text = lionCub.name
                 self.ageLabel.text = String(lionCub.age)
                 self.breedLabel.text = lionCub.breed
                 self.factLabel.text = lionCub.fact
             }
-        }) { (<#Bool#>) -> Void in
-            <#code#>
+            }) { (finishe:Bool) -> () in
+            
         }
         
    

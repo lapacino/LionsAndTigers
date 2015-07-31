@@ -115,14 +115,7 @@
 		34B01ACE1B6B9D6F00FB5C78 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				34B01AF01B6BA16100FB5C78 /* BengalTiger.jpg */,
-				34B01AF11B6BA16100FB5C78 /* IndochineseTiger.jpg */,
-				34B01AF21B6BA16100FB5C78 /* Lion.jpg */,
-				34B01AF31B6BA16100FB5C78 /* LionCub1.jpg */,
-				34B01AF41B6BA16100FB5C78 /* LionCub2.jpeg */,
-				34B01AF51B6BA16100FB5C78 /* Lioness.jpeg */,
-				34B01AF61B6BA16100FB5C78 /* MalayanTiger.jpg */,
-				34B01AF71B6BA16100FB5C78 /* SiberianTiger.jpg */,
+				34B01B341B6BE45500FB5C78 /* image */,
 				34B01ACF1B6B9D7000FB5C78 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -143,6 +136,21 @@
 				34B01AE51B6B9D7000FB5C78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34B01B341B6BE45500FB5C78 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				34B01AF01B6BA16100FB5C78 /* BengalTiger.jpg */,
+				34B01AF71B6BA16100FB5C78 /* SiberianTiger.jpg */,
+				34B01AF11B6BA16100FB5C78 /* IndochineseTiger.jpg */,
+				34B01AF21B6BA16100FB5C78 /* Lion.jpg */,
+				34B01AF31B6BA16100FB5C78 /* LionCub1.jpg */,
+				34B01AF41B6BA16100FB5C78 /* LionCub2.jpeg */,
+				34B01AF51B6BA16100FB5C78 /* Lioness.jpeg */,
+				34B01AF61B6BA16100FB5C78 /* MalayanTiger.jpg */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
